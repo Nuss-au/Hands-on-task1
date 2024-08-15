@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'kumbh Sans' sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:  hsl(185, 75%, 39%);
+    color: hsl(229, 23%, 23%);
+    /* to hide any overflowing image */
+    overflow: hidden;
+    /* to be able to position background images */
+    position: relative;
+}
+
+.card-top {
+    position: absolute;
+    background: url("images/bg-pattern-top.svg");
+    background-size: contain;
+}
+
+.card-bottom {
+    position: absolute;
+    background: url(images/bg-pattern-bottom.svg);
+    background-size: contain;
+}
+
+.card {
+    background: white;
+    height: 376px;
+    width: 350px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 99;
+}
+
+/* to make the background image div contain the card */
+.card .bg-img {
+    height: 145px;
+    background: url(images/bg-pattern-card.svg);
+    /* dimensions or radius for top left, top right, bottom right, bottom left */
+    border-radius: 20px 20px 0 0;
+}
+
+/* for profile picture */
+.profile .pic {
+    /* to push the pixture to the left. absolute makes it easier to position things well */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    /* padding on the border of the profile pic , top; to move the picture to the top */
+    top: 94px;
+    padding: 5px;
+    background: white;
+}
+
+.profile .pic img {
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 25px;
+}
+
+.profile .name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.profile .name span {
+    /* to make the name bold */
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.profile .location {
+    color: hsl(227, 10%, 46%);
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 24px;
+    text-align: center;
+}
+
+.stats .number {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}

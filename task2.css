@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color:  hsl(30, 38%, 92%);
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Fraunces', sans-serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+.card {
+    width: 500px;
+    height: 100%;
+}
+
+.card-container {
+    display: flex;
+}
+
+.product-image {
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    width: 50%;
+    background-position: center center;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.card-info {
+    width: 50%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.product-type {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+}
+
+.title {
+    margin: 1rem 0;
+}
+
+.product desc {
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.prices h2 {
+    color: hsl(158, 36%, 37%);
+}
+
+.prices p {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    background-color:hsl(158, 36%, 37%);
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  hsl(212, 21%, 14%);
+}
+
+@media screen and (max-width:550px) {
+    .card {
+        width:350px;
+    }
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-image {
+        background-image: url(images/image-product-mobile.jpg);
+        background-size: cover;
+        border-radius: 0.5rem 0.5rem 0 0;
+        height: 250px;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+.card-info {
+    width: 100%;
+}
