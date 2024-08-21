@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript calculator</title>
+    <link rel="stylesheet" href="handson2.css">
+    <script src="handson2.js" defer></script>
+</head>
+<body>
+    <div class="calculator-container">
+    <div class="main-container">
+        <input type="text" id="display" value="0">
+
+    <!-- to make ac button 2 times bigger than other buttons-->
+
+    <button onclick="clearDisplay()" class="span-two">AC</button>
+    <button onclick="deleteLast()">DEL</button>
+    <button onclick="appendCharacter('+')">+</button>
+    <button onclick="appendCharacter('1')">1</button>
+    <button onclick="appendCharacter('2')">2</button>
+    <button onclick="appendCharacter('3')">3</button>
+
+    <button onclick="appendCharacter('-')">-</button>
+    <button onclick="appendCharacter('4')">4</button>
+    <button onclick="appendCharacter('5')">5</button>
+    <button onclick="appendCharacter('6')">6</button>
+
+    <button onclick="appendCharacter('÷')">÷</button>
+    <button onclick="appendCharacter('7')">7</button>
+    <button onclick="appendCharacter('8')">8</button>
+    <button onclick="appendCharacter('9')">9</button>
+
+    <button onclick="appendCharacter('*')">*</button>
+    <button onclick="appendCharacter('0')">0</button>
+    <button onclick="appendCharacter('.')">.</button>
+    <button onclick="calculateResult()" class="span-two">=</button>
+    
+    </div>
+    </div> 
+</body>
+</html>
